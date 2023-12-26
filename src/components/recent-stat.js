@@ -59,12 +59,12 @@ export function renderRecentStatCard(profileStats, recentGames) {
                   <text x="53" y="-3" class="header" text-decoration="underline">${nickname}</text>
               </a>
               <text x="53" y="14" class="stat">
-                  Recently played 
+                  最近在玩 
                   <tspan font-weight="bold">
                   ${formatRecentlyPlayedGamesName(recentlyPlayedGamesName)}
                   </tspan>
               </text>
-              <text x="53" y="28" class="stat">Currently: ${personaState}</text> 
+              <text x="53" y="28" class="stat">状态： ${personaState}</text> 
             </g>
         </g>
         

@@ -18,7 +18,7 @@ const recentGame = (stats) => {
 };
 
 const convertGamePlayTime = (playTime2) => {
-  return (playTime2 === 0 ? 0 : (playTime2 / 60).toFixed(2)) + " hours";
+  return (playTime2 === 0 ? 0 : (playTime2 / 60).toFixed(2)) + " 小时";
 };
 
 export function renderRecentGames(recentGames) {
