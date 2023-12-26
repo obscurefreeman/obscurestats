@@ -29,13 +29,13 @@ export function recentlyPlayedGamesName(recentGames) {
 }
 
 const personaMap = {
-  0: "离线",
-  1: "在线",
-  2: "忙碌",
-  3: "离开",
-  4: "打盹",
-  5: "寻找交易",
-  6: "寻找游戏",
+  0: "Offline",
+  1: "Online",
+  2: "Busy",
+  3: "Away",
+  4: "Snooze",
+  5: "Looking to trade",
+  6: "Looking to play",
 };
 
 export function convertPersonaState(personaState) {
