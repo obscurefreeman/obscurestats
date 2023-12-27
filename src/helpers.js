@@ -51,7 +51,7 @@ export function convertNicknameColor(personaMap) {
   } else if (personaMap === 2) {
     nicknameColor = "green";
   } else {
-    nicknameColor = "unknown";
+    nicknameColor = "white";
   }
   return nicknameColor;
 }
