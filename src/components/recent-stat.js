@@ -11,7 +11,14 @@ export function renderRecentStatCard(profileStats, recentGames) {
     recentlyPlayedGamesName,
     personaState,
   } = profileStats;
-  const nicknameColor = personaState === 1 ? "green" : "#ffffff";
+  
+  let nicknameColor = "#ffffff";
+
+  if (personaState === 1) {
+    nicknameColor = "blue";
+  } else if (personaState === 2) {
+    nicknameColor = "green";
+  }
   return `
     <svg width="360" height="255" viewBox="0 0 360 255" fill="none" xmlns="http://www.w3.org/2000/svg">
         <style>
