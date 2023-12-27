@@ -22,7 +22,7 @@ const colorMap = {
 let nicknameColor = colorMap[personaState] || "#898989";
 
   return `
-    <svg width="360" height="255" viewBox="0 0 360 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="360" height="260" viewBox="0 0 360 255" fill="none" xmlns="http://www.w3.org/2000/svg">
         <style>
             .header {
             font: 600 14px "Segoe UI", Ubuntu, Sans-Serif;

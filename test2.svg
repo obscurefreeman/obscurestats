@@ -1,4 +1,4 @@
-<svg width="360" height="255" viewBox="0 0 360 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="260" viewBox="0 0 360 255" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
         .header {
         font: 600 14px "Segoe UI", Ubuntu, Sans-Serif;
@@ -34,29 +34,40 @@
             opacity: 1;
         }
         }
-    @keyframes border-gradient {
-      0% {
-        stroke-dashoffset: 0;
+      @keyframes border-animation {
+        0% {
+          stroke: #4CAF50;
+        }
+        50% {
+          stroke: orange;
+        }
+        100% {
+          stroke: #4CAF50;
+        }
       }
-      100% {
-        stroke-dashoffset: -200;
+      <!-- @keyframes border-gradient {
+        0% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: -200;
+        }
       }
-    }
-    rect {
-      stroke-dasharray: 200;
-      animation: border-gradient 5s linear infinite;
-      animation-fill-mode: forwards;
-    }
+      rect {
+        stroke-dasharray: 200;
+        animation: border-gradient 5s linear infinite;
+        animation-fill-mode: forwards;
+      } -->
     </style>
 
-    <defs>
+    <!-- <defs>
       <linearGradient id="border-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stop-color="red" />
         <stop offset="100%" stop-color="blue" />
       </linearGradient>
-    </defs>
+    </defs> -->
 
-    <rect x="0.5" y="0.5" rx="10" ry="10" height="99%" stroke="url(#border-gradient)" width="99%" fill="#171a21" stroke-opacity="1" stroke-width="2" />
+    <rect x="0.5" y="0.5" rx="10" ry="10" height="99%" stroke="white" width="99%" fill="#171a21" stroke-opacity="1" stroke-width="2" style="animation: border-animation 10s infinite;" />
 
     <g transform="translate(15, 30)">
           <g transform="translate(0, 0)">
