@@ -42,18 +42,18 @@ export function convertPersonaState(personaState) {
   return personaMap[parseInt(personaState)];
 }
 
-export function convertNicknameColor(personaMap) {
-  let nicknameColor;
+export function convertmynamecolor(nicknameColor) {
+  let mynamecolor;
   if (personaMap === 0) {
-    nicknameColor = "white";
+    mynamecolor = "white";
   } else if (personaMap === 1) {
-    nicknameColor = "blue";
+    mynamecolor = "blue";
   } else if (personaMap === 2) {
-    nicknameColor = "green";
+    mynamecolor = "green";
   } else {
-    nicknameColor = "white";
+    mynamecolor = "white";
   }
-  return nicknameColor;
+  return mynamecolor;
 }
 
 
