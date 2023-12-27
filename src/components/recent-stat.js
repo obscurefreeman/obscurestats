@@ -10,8 +10,30 @@ export function renderRecentStatCard(profileStats, recentGames) {
     recentPlayHours,
     recentlyPlayedGamesName,
     personaState,
-    nicknameColor,
   } = profileStats;
+
+// export function convertnicknameColor(nicknameColor) {
+//   let mynamecolor;
+//   if (personaMap === 0) {
+//     mynamecolor = "white";
+//   } else if (personaMap === 1) {
+//     mynamecolor = "blue";
+//   } else if (personaMap === 2) {
+//     mynamecolor = "green";
+//   } else {
+//     mynamecolor = "white";
+//   }
+//   return mynamecolor;
+// }
+
+let nicknameColor;
+if (personaState === "在线") {
+  nicknameColor = "blue";
+} else if (personaState === "离开") {
+  nicknameColor = "white";
+} else {
+  nicknameColor = "black"; // 默认颜色
+}
 
   return `
     <svg width="360" height="255" viewBox="0 0 360 255" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +41,7 @@ export function renderRecentStatCard(profileStats, recentGames) {
             .header {
             font: 600 14px "Segoe UI", Ubuntu, Sans-Serif;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
-            fill: blue;
+            fill: ${nicknameColor};
             }
 
             .game-header {
