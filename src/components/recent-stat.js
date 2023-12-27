@@ -11,7 +11,7 @@ export function renderRecentStatCard(profileStats, recentGames) {
     recentlyPlayedGamesName,
     personaState,
   } = profileStats;
-  
+
   let nicknameColor = "#ffffff";
 
   if (personaState === 1) {
@@ -24,7 +24,6 @@ export function renderRecentStatCard(profileStats, recentGames) {
         <style>
             .header {
             font: 600 14px "Segoe UI", Ubuntu, Sans-Serif;
-            fill: #ffffff;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
             }
 
@@ -64,7 +63,7 @@ export function renderRecentStatCard(profileStats, recentGames) {
             <g transform="translate(0, 0)">
               <image x="0" y="-15" href="${avatarMedium}" style="animation: fadeInAnimation 0.8s ease-in-out forwards;" width="45" height="45"/>
               <a href="${steamProfileUrl}">
-                  <text x="53" y="-3" class="header" text-decoration="underline" fill="${nicknameColor}">${nickname}</text>
+                  <text x="53" y="-3" class="header" fill="${nicknameColor}">${nickname}</text>
               </a>
               <text x="53" y="14" class="stat">
                   最近在玩 
