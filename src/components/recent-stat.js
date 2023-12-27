@@ -12,20 +12,6 @@ export function renderRecentStatCard(profileStats, recentGames) {
     personaState,
   } = profileStats;
 
-// export function convertnicknameColor(nicknameColor) {
-//   let mynamecolor;
-//   if (personaMap === 0) {
-//     mynamecolor = "white";
-//   } else if (personaMap === 1) {
-//     mynamecolor = "blue";
-//   } else if (personaMap === 2) {
-//     mynamecolor = "green";
-//   } else {
-//     mynamecolor = "white";
-//   }
-//   return mynamecolor;
-// }
-
 const colorMap = {
   "在线": "#57cbde",
   "打盹": "#57cbde",
