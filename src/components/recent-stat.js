@@ -28,7 +28,7 @@ export function renderRecentStatCard(profileStats, recentGames) {
 
 let nicknameColor;
 if (personaState === "在线") {
-  nicknameColor = "blue";
+  nicknameColor = "green";
 } else if (personaState === "离开") {
   nicknameColor = "white";
 } else {
