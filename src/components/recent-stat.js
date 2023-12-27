@@ -10,6 +10,7 @@ export function renderRecentStatCard(profileStats, recentGames) {
     recentPlayHours,
     recentlyPlayedGamesName,
     personaState,
+    nicknameColor,
   } = profileStats;
 
   return `
