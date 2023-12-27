@@ -26,14 +26,14 @@ export function renderRecentStatCard(profileStats, recentGames) {
 //   return mynamecolor;
 // }
 
-let nicknameColor;
-if (personaState === "在线") {
-  nicknameColor = "green";
-} else if (personaState === "离开") {
-  nicknameColor = "white";
-} else {
-  nicknameColor = "black"; // 默认颜色
-}
+const colorMap = {
+  "在线": "#57cbde",
+  "打盹": "#57cbde",
+  "寻找交易": "#90ba3c",
+  "寻找游戏": "#90ba3c",
+};
+
+let nicknameColor = colorMap[personaState] || "#898989";
 
   return `
     <svg width="360" height="255" viewBox="0 0 360 255" fill="none" xmlns="http://www.w3.org/2000/svg">
