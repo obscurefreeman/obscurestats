@@ -42,6 +42,21 @@ export function convertPersonaState(personaState) {
   return personaMap[parseInt(personaState)];
 }
 
+export function convertNicknameColor(personaMap) {
+  let nicknameColor;
+  if (personaMap === 0) {
+    nicknameColor = "white";
+  } else if (personaMap === 1) {
+    nicknameColor = "blue";
+  } else if (personaMap === 2) {
+    nicknameColor = "green";
+  } else {
+    nicknameColor = "unknown";
+  }
+  return nicknameColor;
+}
+
+
 export async function downloadGamesImages(recentGames) {
   await Promise.all(
     recentGames.map(async (game) => {
