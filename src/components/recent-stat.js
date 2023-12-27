@@ -57,7 +57,7 @@ export function renderRecentStatCard(profileStats, recentGames) {
             <g transform="translate(0, 0)">
               <image x="0" y="-15" href="${avatarMedium}" style="animation: fadeInAnimation 0.8s ease-in-out forwards;" width="45" height="45"/>
               <a href="${steamProfileUrl}">
-                  <text x="53" y="-3" class="header" fill="${nicknameColor}">${nickname}</text>
+                  <text x="53" y="-3" class="header" fill="#222">${nickname}</text>
               </a>
               <text x="53" y="14" class="stat">
                   最近在玩 
