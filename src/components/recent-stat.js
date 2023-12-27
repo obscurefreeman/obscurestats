@@ -19,7 +19,7 @@ export function renderRecentStatCard(profileStats, recentGames) {
             .header {
             font: 600 14px "Segoe UI", Ubuntu, Sans-Serif;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
-            fill: "#222";
+            fill: #ffffff;
             }
 
             .game-header {
